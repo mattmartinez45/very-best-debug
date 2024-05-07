@@ -40,7 +40,7 @@ class VenuesController < ApplicationController
     the_venue.neighborhood = input_neighborhood
     the_venue.save
 
-    next_url = "/venues/#{venue.id.to_s}"
+    next_url = "/venues/#{the_venue.id.to_s}"
     
     redirect_to(next_url)
   end
